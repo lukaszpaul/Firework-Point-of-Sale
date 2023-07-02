@@ -9,7 +9,7 @@ allName =["Jurassic Raptor", "Polar Attack","American Riders","Party On America"
 
 
 st.title("BEARDED PYRO ")
-st.subheader("      ESCAPE THE TRAPHOUSE")
+
 st.divider()
 input_placeholder = st.empty()
 
