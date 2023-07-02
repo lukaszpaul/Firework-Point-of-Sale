@@ -137,11 +137,9 @@ with col5:
 
 # st.write("##")
 # st.write("##")
-
-# if st.button("CLEAR ONLY/ NO SALE"):
-#     st.write("Are you sure?")
-#     if st.button("YES"):
-#         reRun()
+st.divider()
+if st.button("CLEAR ONLY/ NO SALE"):
+    reRun()
     
 
 
