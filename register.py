@@ -77,9 +77,16 @@ with col4:
             editable_df['Total Price'] = editable_df['Price'] * editable_df['Quantity']
             total_price = editable_df['Total Price'].sum()
             discounted_price = total_price * 0.90
-            total_price = discounted_price * tax
+            total_price_with_tax = discounted_price * tax
+            discount_amount = total_price - discounted_price
+            tax = total_price_with_tax - discounted_price
+
+            st.subheader(f"${total_price:.2f} TOTAL")
+            st.subheader(f"${discount_amount:.2f} AMOUNT OFF")
+
             st.subheader(f"${discounted_price:.2f} TOTAL 10% OFF")
-            st.subheader(f"${total_price:.2f} TOTAL + TAX")
+            st.subheader(f"${total_price_with_tax:.2f}  TAX")
+            st.subheader(f"${total_price_with_tax:.2f} TOTAL + TAX")
 
 with col5:
     if st.button('COUPON'):
