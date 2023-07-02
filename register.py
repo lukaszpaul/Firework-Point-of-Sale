@@ -85,7 +85,7 @@ with col4:
             st.subheader(f"${discount_amount:.2f} AMOUNT OFF")
 
             st.subheader(f"${discounted_price:.2f} TOTAL 10% OFF")
-            st.subheader(f"${total_price_with_tax:.2f}  TAX")
+            st.subheader(f"${tax:.2f}  TAX")
             st.subheader(f"${total_price_with_tax:.2f} TOTAL + TAX")
 
 with col5:
