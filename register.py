@@ -65,8 +65,8 @@ if st.button('Update Total'):
     total_price_with_tax = total_price * tax
 
     st.header("TOTAL")
-    st.subheader(f"The total price is: ${total_price:.2f}")
-    st.subheader(f"The total price with tax is: ${total_price_with_tax:.2f}")
+    st.subheader(f"${total_price:.2f} TOTAL")
+    st.subheader(f"${total_price_with_tax:.2f} TOTAL + TAX")
 st.write("##")
 st.write("##")
 
@@ -78,8 +78,8 @@ with col4:
             total_price = editable_df['Total Price'].sum()
             discounted_price = total_price * 0.90
             total_price = discounted_price * tax
-            st.subheader(f"10% discount is: ${discounted_price:.2f}")
-            st.subheader(f"With tax: ${total_price:.2f}")
+            st.subheader(f"${discounted_price:.2f} TOTAL 10% OFF")
+            st.subheader(f"${total_price:.2f} TOTAL + TAX")
 
 with col5:
     if st.button('COUPON'):
@@ -87,8 +87,8 @@ with col5:
             total_price = editable_df['Total Price'].sum()
             discounted_price = total_price * 0.85
             total_price = discounted_price * tax
-            st.subheader(f"15% discount is: ${discounted_price:.2f}")
-            st.subheader(f"With tax: ${total_price:.2f}")
+            st.subheader(f"${discounted_price:.2f} TOTAL 15% OFF")
+            st.subheader(f"${total_price:.2f} TOTAL + TAX")
 
 # if st.button("SALE"):
 #     saleType = ""
